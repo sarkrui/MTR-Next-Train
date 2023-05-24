@@ -8,7 +8,7 @@ This is a Node.js application that provides an API to retrieve MTR (Mass Transit
   ```ruby
   https://mtr.idata.host/EAL/HUH
   ```
-  Replace EAL with the [code](https://github.com/sarkrui/MTR-Next-Train/MTR-Codenames.md) of the desired MTR line (e.g., AEL for Airport Express) and HUH with the code of the desired MTR station (e.g., HUH for Hung Hom). The API will return a JSON response containing the train schedule for the specified line and station.
+  Replace EAL with the [code](https://github.com/sarkrui/MTR-Next-Train/blob/main/MTR-Codenames.md) of the desired MTR line (e.g., AEL for Airport Express) and HUH with the code of the desired MTR station (e.g., HUH for Hung Hom). The API will return a JSON response containing the train schedule for the specified line and station.
 
 2. iOS Shortcut Integration
   - Download [iOS Shortcut Example](https://www.icloud.com/shortcuts/76c807ea99474bd39de359c29d8cf8e8)
