@@ -2,6 +2,20 @@
 
 This is a Node.js application that provides an API to retrieve MTR (Mass Transit Railway) train schedules for a specific line and station in Hong Kong. The API fetches real-time data from the Hong Kong Open Data platform.
 
+
+## Demo
+1. Open your web browser and navigate to the following [URL](https://mtr.idata.host/EAL/HUH):
+  ```ruby
+  https://mtr.idata.host/EAL/HUH
+  ```
+  Replace EAL with the code of the desired MTR line (e.g., AEL for Airport Express) and HUH with the code of the desired MTR station (e.g., HUH for Hung Hom). The API will return a JSON response containing the train schedule for the specified line and station.
+
+2. iOS Shortcut Integration
+  - Download [iOS Shortcut Example](https://www.icloud.com/shortcuts/76c807ea99474bd39de359c29d8cf8e8)
+  - Open the Shortcuts app and import the downloaded shortcut.
+  - Configure the shortcut by providing the desired line and station codes.
+  - Run the shortcut to retrieve the train schedule.
+
 ## Prerequisites
 
 - Node.js (version 12 or above)
@@ -36,13 +50,23 @@ The API will return a JSON response containing the train schedule for the specif
 
 ```json
 {
-    "line": "Line Name",
-    "station": "Station Name",
-    "schedule": {
-        "UP": ["Train to Destination will arrive at Time in Minutes mins"],
-        "DOWN": ["Train to Destination will arrive at Time in Minutes mins"]
-        }
-    }
+  "line": "East Rail Line",
+  "station": "Hung Hom",
+  "schedule": {
+    "UP": [
+      "Lok Ma Chau (15:57) in 1 mins",
+      "Lo Wu (16:02) in 6 mins",
+      "Lo Wu (16:06) in 10 mins",
+      "Lok Ma Chau (16:10) in 14 mins"
+    ],
+    "DOWN": [
+      "Admiralty (15:58) in 2 mins",
+      "Admiralty (16:01) in 5 mins",
+      "Admiralty (16:05) in 9 mins",
+      "Admiralty (16:09) in 13 mins"
+    ]
+  }
+}
 ```
 
   - line: The name of the MTR line.
